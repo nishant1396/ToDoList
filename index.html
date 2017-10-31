@@ -1,0 +1,92 @@
+<html>
+
+<head>
+
+    <title>Todo-list</title>
+    <link rel="stylesheet" type="text/css" href=".\todolist.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div id="header">
+        <h2 id="clist">Todo List</h2>
+        <p id="pmsg"></p>
+        
+    </div>
+
+
+
+    <div id="homepage">
+
+        <input class="btn btn-primary" id="addbtn" type="button" value="Add New Task">
+        <br>
+        <br>
+        <table class="editRow">
+
+           <thead id="showTable"></thead>
+            <tbody id="tableID">
+
+
+            </tbody>
+
+        </table>
+    </div>
+
+    <div id="addpage">
+        <fieldset id="fieldsetID">
+           
+            <h1 id="heading4">Add New Task</h1>
+
+            <form id="formID">
+
+                <div class="form-group">
+
+                    <input id="tname" type="text" class="form-control" placeholder="Task Details" required="" name="tname" />
+                    <select id="tstatus" required=""></select>
+
+                </div>
+
+                <div id="btnfoot">
+                    <input id="btnSubmit" class="btn btn-primary" type="button" value="Add" style="left: 100px;font-family: Verdana" />
+                    <input id="cancel" class="btn btn-danger" type="button" value="Cancel" style="left: 100px;font-family: Verdana" />
+
+                </div>
+
+            </form>
+        </fieldset>
+
+    </div>
+
+    <div id="updatepage">
+        <fieldset id="fieldsetID">
+            <h1 id="heading4">Update Task</h1>
+
+            <form id="formID">
+
+                <div class="form-group" id="updateInputField">
+
+                    <input id="t-name" type="text" class="form-control" placeholder="Task Details" required="" name="tname" />
+                    <select id="t-status" required=""></select>
+
+
+                </div>
+
+                <div id="btnfoot">
+                    <input id="btnSubmit2" class="btn btn-primary" type="button" value="Update" style="left: 100px;font-family: Verdana" />
+                    <input id="cancel2" class="btn btn-danger" type="button" value="Cancel" style="left: 100px;font-family: Verdana" />
+
+                </div>
+
+            </form>
+        </fieldset>
+
+    </div>
+
+    <script type="text/javascript" src="./todolist.js"></script>
+</body>
+
+</html>
